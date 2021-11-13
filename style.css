@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    width: 60%;
+    min-height: 410px;
+    display: flex;
+}
+
+.card {
+    width: 33.33%;
+    padding: 40px;
+}
+
+#card1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0px 0px 8px;
+}
+
+#card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 8px 8px 0px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    padding: 20px 0;
+}
+
+.mybtn {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 25px;
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+#card1 .mybtn {
+    color: hsl(31, 77%, 52%);
+}
+
+#card1 .mybtn:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+#card2 .mybtn {
+    color: hsl(184, 100%, 22%);
+}
+
+#card2 .mybtn:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+#card3 .mybtn {
+    color: hsl(179, 100%, 13%);
+}
+
+#card3 .mybtn:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+.mybtn:hover {
+    cursor: pointer;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.attribution {
+    color: black;
+    margin: 15px auto;
+}
+
+/* Mobile-View */
+@media (max-width: 375px) {
+    .container {
+        height: 100%;
+    }
+    
+    .cards {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #card1 {
+        border-radius: 8px 8px 0px 0px;
+    }
+    
+    #card3 {
+        border-radius: 0px 0px 8px 8px;
+    }
+}
+
+/* - Mobile: 375px
+- Desktop: 1440px */
